@@ -1,31 +1,42 @@
-body {
+*{
     padding: 0%;
     margin: 0%;
+}
+body {
+    width: 100vw;
+    height: calc(100vh - 16px);
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
 }
 
 .instagram-body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content:space-evenly;
     align-items: center;
     display: flex;
 }
 
 .sidebar-section{
-    width: 50%;
+   width: 30%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: start;
+    align-items: center;
+    /* padding: 50px 0px; */
+    /* background-color: red; */
 }
-
+.sidebar-icons{
+    width: 28px;
+    height: 28px;
+}
 .sidebar{
     width: 100px;
-    height: 100vh;
+    height: 92%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -53,13 +64,6 @@ body {
     height: 100%;
 }
 
-.posts-section{
-   width: 100%;
-   height: 500px;
-   background-color: brown;
-   display: flex;
-   padding: 25px;
-}
 
 .suggestions-section-container{
     width: 100%;
@@ -82,8 +86,9 @@ body {
 
 .profiles-container{
     gap: 10px;
-    height: 440px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .profile-horizontal-card {
     display: flex;
@@ -96,6 +101,9 @@ body {
     height: 44px;
     overflow: hidden;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-picture-2{
@@ -138,7 +146,7 @@ body {
 }
 .text-container-of-see-all{
     width:100% ;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,15 +171,73 @@ body {
     gap: 20px;
 }
 .footer-dot{
- color: #6A717A;
- font-size: 16px; 
+    color: #6A717A;
+    font-size: 16px; 
 }
 .footer-link{
- text-decoration: none;  
- color: #6A717A;
- font-size: 16px;
+    text-decoration: none;  
+    color: #6A717A;
+    font-size: 16px;
 }
 .copyright{
-     color: #6A717A;
- font-size: 16px;
+    color: #6A717A;
+    font-size: 16px;
+}
+
+.side-bar-center-items-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.side-bar-footer-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.posts-section{
+   width: 630px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   background: #000;
+}
+
+.stories-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 124px;
+    overflow: auto;
+   background: red;
+
+}
+
+.story-outer{
+   background: linear-gradient(to right, #fffb00 20%, #ff9900 30%, #c300ff 40%, #ff0202 90%);
+    border-radius: 100%;
+    margin-right: 25px;
+    height: 74px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+.story-inner{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.story-image{
+  height: 100%;
+  width: 100%;
 }
