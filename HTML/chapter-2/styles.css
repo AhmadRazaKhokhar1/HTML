@@ -345,3 +345,11 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.like-button-container{
+    display: flex;
+    gap: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
