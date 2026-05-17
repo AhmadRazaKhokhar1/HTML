@@ -6,16 +6,6 @@ const logger = (msg) => {
 const obj = {}
 function calculateResult(obj) { }
 
-/*
-urdu 100/55    %Age: 55%.     Grade: D
-english 100/66    %Age: 66%.     Grade: C
-computer 100/88    %Age: 88%.     Grade: A
-pak std 45/33    %Age: 73%.     Grade: B
-
-Total 345/242 70.14% B
-*/
-
-
 // Conditions in JS
 /*
 = Assignment operator e.g. const subj = "english"
