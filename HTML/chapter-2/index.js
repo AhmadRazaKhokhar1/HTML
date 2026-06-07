@@ -36,4 +36,10 @@ const obj = {
 function abc (){}
 
 const date = new Date();
-const regex = '^[a-zA-Z0-9_-]+\.(jpg|png|gif)$'
+const regex = '^[a-zA-Z0-9_-]+\.(jpg|png|gif)$';
+
+// Airthmetic Operaters
+// l.h.s += value
+// *=
+// /=
+// -+
