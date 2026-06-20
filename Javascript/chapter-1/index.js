@@ -7,7 +7,7 @@ const deleteBtnClassName = "todoDeleteBtn";
 const todoDivElementClassName = "todoElement";
 const editBtnClassName = "todoEditBtn";
 const buttonsContainerClassName = "btnContainer";
-const hideElementClassName = "hide-element"
+const hideElementClassName = "hide-element";
 
 function addTodo() {
 
@@ -66,14 +66,17 @@ function addTodo() {
    deleteBtn.onclick = () => todoItems.removeChild(todoToBeModified);
     console.log(todoToBeModified);
 
-   editBtn.onclick = () => {
+   editBtn.onclick = () => { // || OR, ! NOT, && AND
        addTodoBtn.className = hideElementClassName;
       const todoForm = document.getElementById("todo-form");
-      const updateButton = document.createElement("button");
+
+      if(!document.getElementById("update-todo-btn")){
+        const updateButton = document.createElement("button");
       updateButton.id = "update-todo-btn"
       updateButton.innerText = "Update Todo";
       updateButton.onclick = ()=> updateTodo(formattedTodoId)
       todoForm.append(updateButton)
+    }
    }
 
     todoInputElement.value = "" // empty input field
@@ -82,11 +85,11 @@ function addTodo() {
 function updateTodo(id){
     addTodoBtn.classList.remove(hideElementClassName)
     const todoInputElement = document.getElementById("todo");
-    const todoText = todoInputElement.value;
+    const updatedTodoText = todoInputElement.value;
 
     console.warn(id)
     const divElementToBeModified = document.getElementById(id);
-    divElementToBeModified.firstChild.textContent = todoText;
+    divElementToBeModified.firstChild.textContent = updatedTodoText;
 
     document.getElementById("update-todo-btn").remove()
     todoInputElement.value = "" // empty input field
