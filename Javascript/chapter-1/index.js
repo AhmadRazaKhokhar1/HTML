@@ -68,6 +68,7 @@ function addTodo() {
 
    editBtn.onclick = () => { // || OR, ! NOT, && AND
        addTodoBtn.className = hideElementClassName;
+       todoInputElement.value = todoText;
       const todoForm = document.getElementById("todo-form");
 
       if(!document.getElementById("update-todo-btn")){
