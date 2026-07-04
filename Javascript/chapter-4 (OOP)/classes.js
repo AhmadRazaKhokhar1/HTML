@@ -8,7 +8,6 @@ class Car {
     printTheSpeedOfCar(date){
         console.log(this.speed, this.brandName, date)
     }
-
 }
 
 const ToyotaGrande = new Car("Toyota Grande", 100);
@@ -61,3 +60,47 @@ OrangeCat.averageAge(5);
 
 BullDog.theAnimalIsRunning();
 OrangeCat.theAnimalIsRunning();
+
+
+const student = {
+    name:"Ahmad",
+    course:"SWE batch 1",
+    phone:"03144240550",
+    email:"ahmadrazawebexpert@gmail.com",
+    printStudentInfo:()=>{
+        console.log(`Name:${student.name}\n Course:${student.course}\n Email:${student.email}\n Phone:${student.phone}`)
+    }
+}
+
+
+class Student {
+   constructor(name, course, email, phone){
+        this.name = name;
+        this.course = course;
+        this.email = email;
+        this.phone = phone;
+   }
+
+   printStudentInfo(){
+    console.log(`Name:${this.name}\n Course:${this.course}\n Email:${this.email}\n Phone:${this.phone}`)
+   }
+   changeCourse(course){
+    this.course = course;
+    this.printStudentInfo();
+   }
+}
+
+// student.printStudentInfo();
+
+
+const ahmad = new Student("Ahmad", "SWE B-1", "ahmadraza@gmail.com", "03144240550");
+const ali = new Student("Ali", "SWE B-3", "ali@gmail.com", "0323420550");
+
+
+ahmad.printStudentInfo();
+ali.printStudentInfo();
+
+ahmad.changeCourse("Marketing B-1");
+ali.printStudentInfo();
+
+
