@@ -11,3 +11,12 @@ console.log(studentName)
 const outputOfFunctinoAbc = functionAbc("Ahmad", 23, true);
 
 console.log(outputOfFunctinoAbc);
+
+class ABC {
+    private num:number;
+    public age: number; 
+    constructor(num:number, age:number) {
+        this.num = num;
+        this.age = age;
+    }
+}
