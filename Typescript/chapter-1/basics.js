@@ -9,3 +9,11 @@ const canMakeJuice = true;
 console.log(studentName);
 const outputOfFunctinoAbc = functionAbc("Ahmad", 23, true);
 console.log(outputOfFunctinoAbc);
+class ABC {
+    num;
+    age;
+    constructor(num, age) {
+        this.num = num;
+        this.age = age;
+    }
+}
