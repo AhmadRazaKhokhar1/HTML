@@ -1,6 +1,6 @@
 {
     "ts-node": {
         "compiler": "typescript",
-        "typeCheck": true
+        "typeCheck": true,
     }
 }
