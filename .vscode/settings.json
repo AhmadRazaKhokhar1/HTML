@@ -19,15 +19,5 @@
     "type": "shell",
     "command": "npm run lint",
     "runOn": "folderOpen"
-  },
-  "liveServer.settings.port": 5501,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
   }
 }
